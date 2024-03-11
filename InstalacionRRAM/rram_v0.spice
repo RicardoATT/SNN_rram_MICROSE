@@ -1,0 +1,12 @@
+*MADE BY JORGE ALEJANDRO JUAREZ LORA IPN
+
+.subckt rram_v0 TE BE
+N1 TE BE rram_v0_model
+.ends rram_v0
+
+.model rram_v0_model rram_v0_va
+
+
+.control
+pre_osdi ${PDK_ROOT}/sky130B/libs.tech/ngspice/rram_v0.osdi
+.endc
